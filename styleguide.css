@@ -1,0 +1,119 @@
+body {
+/* Kleuren */
+    --primary-color-white: white;
+    --background-color1: #D92B4D;
+    --background-color2: #F3F1E9;
+    --background-color3: #416AD9;
+    --background-color4: #008273;
+    --footer-background-color: #E7E6DE;
+
+    --border-color: black;
+
+/* Typografie */
+    --normal-text-size: 16px;
+    --font-size-header-s: 20px;
+    --font-size-header-m: 34px;
+    --font-size-header-l: 40px;
+
+    --line-height-header: 110%;
+
+    --font-family-bold: "Gilroy-bold";
+    --font-family-black: "Gilroy-black";
+    --font-family-normal: "Gilroy";
+    --font-family-italic: "Gilroy-italic";
+
+    --letter-spacing: 0%; 
+}
+ 
+.h1 {
+    font-family: var(--font-family-black);
+    font-size: var(--font-size-header-l);
+    line-height: var(--line-height-text);
+    letter-spacing: var(--letter-spacing);
+}
+
+.h2 {
+    font-family: var(--font-family-black);
+    font-size: var(--font-size-header-m);
+    line-height: var(--line-height-text);
+    letter-spacing: var(--letter-spacing);
+}
+
+.h3 {
+    font-family: var(--font-family-bold);
+    font-size: var(--font-size-header-s);
+    line-height: var(--line-height-text); 
+    letter-spacing: var(--letter-spacing);
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Gilroy-bold";
+    src: url(./fonts/gilroy-bold.woff2) format('woff2'); }
+
+@font-face {
+    font-family: "Gilroy-black";
+    src: url(./fonts/gilroy-extra-bold.woff2) format('woff2'); }
+
+@font-face {
+    font-family: "Gilroy";
+    src: url(./fonts/gilroy-regular.woff2) format('woff2'); }
+
+@font-face {
+    font-family: "Gilroy-italic";
+    src: url(./fonts/gilroy-regular-italic.woff2) format('woff2'); }
+
+
+.paragraph {
+    font-family: "Gilroy";
+    font-size: var(--normal-text-size);
+    line-height: 160%; }
+
+.paragraph-big {
+    font-family: "Gilroy";
+    font-size: 18px;
+    line-height: 160%; }
+
+.buttonlink {
+    font-family: "Gilroy-bold";
+    font-size: 17px;
+    line-height: 150%; 
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 8px;
+    padding: 14px 24px 14px 24px;
+    border: solid rgb(10, 9, 9) 2px;
+    border-radius: 30px;
+    color: rgb(9, 9, 9);}
+
+.footerlink, .subtext {
+    font-family: "Gilroy-bold";
+    font-size: 15px;
+    line-height: 110%; }
+
+.datum-text {
+    font-family: "Gilroy";
+    font-size: 14px;
+    line-height: 150%; }
+
+.footer-text {
+    font-family: "Gilroy";
+    font-size: 12px;
+    line-height: 150%; }
+
+.italic-text {
+    font-family: "Gilroy-italic";
+    font-size: 14px;
+    line-height: 28px; } 
+
+    .toekomstlink {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        gap: 8px;
+        padding: 14px 24px 14px 24px;
+        border: solid white 2px;
+        border-radius: 30px;
+        color: white;
+    }

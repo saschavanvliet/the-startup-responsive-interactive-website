@@ -1,0 +1,347 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+ul {
+    list-style: none; 
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+
+body > section {
+    padding: 0 6.6vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color1);
+    padding: 24px 0px 0px 24px;
+
+    .logo-header {
+        width: 140px;
+        height: 40px;
+    }
+    
+    div {
+        background-color: white;
+        height: 40px;
+        width: 60px;
+        border-radius: 30px 0px 0px 30px;
+    }
+    
+    nav {
+        ul {
+            display: none;
+        }
+    }
+}
+
+body > section:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--background-color1);
+    gap: 24px;
+    padding-top: 24px;
+    padding-bottom: 88px;
+
+    h1 { 
+        grid-column: span 2;
+        max-width: 857px;
+        color: var(--primary-color-white);
+        margin-top: 24px;
+    }
+
+    p {
+        max-width: 857px;
+        margin-bottom: 8px;
+        color: white;
+        text-wrap: balance;
+    }
+
+    button {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        height: 96px;
+        width: 96px;
+        background: none;
+        border: none;
+    }
+
+    .photogone {
+        display: none;
+    }
+}
+
+body > section:nth-of-type(2) {
+    padding-bottom: 88px;
+
+    h2 {
+        margin-top: 16px;
+    }
+
+    p {
+        margin-top: 8px;
+        margin-bottom: 16px;
+    }
+}
+
+body > section:nth-of-type(3) {
+    padding-bottom: 72px;
+
+    img {
+        object-fit: cover;
+        max-height: 648px;
+        max-width: 1152px;
+    }
+
+    h3 {
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+
+    .undertitlepadding {
+        margin-bottom: 62px ;
+    }
+}
+
+body > section:nth-of-type(4) {
+    padding-top: 40px;
+    padding-bottom: 88px;
+    background-color: #416AD9;
+
+    .h1 {
+        color: white;
+        margin-top: 42px;
+        margin-bottom: 38px;
+    }
+
+    .h3 {
+        margin-top: 16px;
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+body > section:nth-of-type(5) {
+    padding-top: 56px;
+    padding-bottom: 76px;
+
+    p {
+        margin-top: 8px;
+        margin-bottom: 27px;
+    }
+}
+
+body > section:nth-of-type(6) {
+    padding-top: 24px;
+    padding-bottom: 91px;
+
+    h2 {
+        margin-bottom: 24px;
+    }
+
+    .h3-extra-marging {
+        margin-bottom: 48px;
+    }
+
+    .h3-normal {
+        margin-bottom: 25px;
+    }
+
+    .name-block {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        grid-template-rows: 20px 20px;
+        column-gap: 8px;
+    }
+
+    .name-block:nth-of-type(1) {
+        margin-bottom: 48px;
+    }
+
+    .circle {
+        background-color: #FF335A;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+    }
+
+    .sub-text {
+        grid-column: 2/2;
+        grid-row: 1/1;
+    }
+
+    .datum-text {
+        grid-column: 2/2;
+        grid-row: 2/2;
+    }
+
+    .purple-text { 
+        color: #706A7C;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+}
+
+body > section:nth-of-type(7) {
+    padding-top: 56px;
+    padding-bottom: 50px;
+    background-color: #008273;
+
+    h2 {
+        color: white;
+        margin-bottom: 16px;
+    }
+
+    p {
+        color: white;
+    }
+
+    .p-link-margin {
+        margin-bottom: 46px;
+    }
+
+    img {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+body > section:nth-of-type(8) {
+    display: flex;
+    justify-content: flex-end;   
+    background-color: #008273;
+
+    button {
+        color: white;
+        cursor: pointer;
+        background-color: #190B34;
+        border: none;
+        border-radius: 10px 0px 0px 0px;
+        width: 154px;
+        height: 49px;
+    }
+}
+
+.naarbovenbutton {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 8px;
+    padding: 14px 24px 14px 24px;
+    border: solid black 2px;
+    border-radius: 30px;
+    color: black;
+    background-color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    animation: pulse 1.5s infinite; 
+}
+
+/* Hover-effect */
+.naarbovenbutton:hover {
+    transform: scale(1.1); 
+    background-color: black;
+    color: white;
+}
+
+/* Puls-animatie */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 40px 24px 50px 24px;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            padding-left: 0px;
+        }
+
+        li {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+/* Media Queries */
+@media (min-width: 1024px) {
+    body > section {
+        padding: 0 4vw;
+    }
+
+    body > section:nth-of-type(1) {
+        display: flex;
+    }
+
+    body > section:nth-of-type(1) button {
+        left: 20px;
+    }
+
+    body > section:nth-of-type(1) .photogone {
+        display: block;
+        position: relative;
+        aspect-ratio: 1.38;
+        width: 40%;
+        margin-top: -11vw;
+        margin-right: -2vw;
+        margin-left: auto;
+    }
+
+    body > section:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 16px;
+        column-gap: 56px;
+        grid-template-rows: 1fr 26px;
+        padding-top: 72px;
+    }
+
+    body > section:nth-of-type(2) a {
+        grid-column: 2/2;
+    }
+
+    body > section:nth-of-type(3) {
+        display: grid;
+        grid-template-rows: 1fr 408px 55px;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+        column-gap: 40px;
+    }
+
+    body > section:nth-of-type(3) article:nth-of-type(1) {
+        grid-column: span 2;
+    }
+}
